@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7faff;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.rowbg{
+    background-color: thistle;
+    background-size:cover;
+}
+
+.head{
+    color:#746659;
+}
+
+
+.stya{
+    color:#746659;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    font-size: 20px;
+
+}
+.stynav{
+    padding-bottom: 1px !important;;
+    font-weight: 350;
+    color: black !important;;
+    font-size: 13px;
+
+}
+.vertical {
+    border-left: 2px solid black;
+    height: 8px;
+    left: 50%;
+    display:inline;
+    margin-left:20px;
+    margin-top:10px;
+    cursor:pointer;
+}
+.mainstyanc{
+    padding:5px;
+    color:black !important;
+    font-size:16px;
+    font-weight:500;
+}
+.styicon{
+    padding:5px;
+    font-weight:900;
+    font-size:20px;
+    margin-left:0px;
+    cursor: pointer;
+}
+.mainlogo{
+    width: 85px;
+}
+.btn1{
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color:#746659;
+    font-weight: 400;
+    border-color:  #746659;
+    padding:5px;
+    border-width:2px;
+    border-style:solid;
+
+}
+
+ .btn1:hover{
+    opacity: 0.9;
+} 
+
+ .mid{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+} 
+.midpara{
+    margin-bottom: 10px !important ;
+} 
+#evy{
+    font-size: 30px;
+    font-weight: 600;
+}
+.showcase{
+    width: 100%;
+    height: 450px;
+    background: url('../img/Screenshot\ 2021-06-25\ 102732.png') 
+    no-repeat right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+ 
+}
+
+#large{
+    width:80%;
+    height:80%;
+}
+
+#endi{
+    width: 100%;
+    height:100%;
+}
+#midi{
+    width:90%;
+    height:80%;
+}
+
+#end{
+    width:90%;
+    height:70%;
+}
+
+
+.fa{
+    font-size: larger;
+    size: 50px;
+}
