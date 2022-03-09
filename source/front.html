@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teachere</title>
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <meta name="google-signin-client_id" content="603870612904-sv4p7pu7jj9fnplq2sv59u0f7r1h4ktc.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8ebdc3706f.js" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='public/css/front.css' type="text/css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script type="module" src='public/js/webrtc.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.3.0/adapter.min.js" integrity="sha256-2qQheewaqnZlXJ3RJRghVUwD/3fD9HNqxh4C+zvgmF4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js'></script>
+        <script src='https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js'></script>
+        <script src='public/js/link.js'></script>
+    </head>
+
+    <body>
+        <!-- ---------------------------------------------------->
+       
+            <!-- NAVBAR  -->
+            <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"> <img src="public/img/logo.png" class="mainlogo" alt="Indus University"><div class = "vertical"></div></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link mainstyanc" href="#">Teachere - Let's Connect</a>
+                        <!-- <a class="nav-link stynav" href="#">Products<i class="fas styicon fa-chevron-down"></i></a>
+                        <a class="nav-link stynav" href="#">Solutions<i class="fas styicon fa-chevron-down"></i></a>
+                        <a class="nav-link stynav" href="#">Resources<i class="fas styicon fa-chevron-down"></i></a>
+                        <a class="nav-link stynav" href="#">More </a> -->
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          
+                <div class="row shadow">
+                    <div class="col-12 col-md-6 mt-5" data-aos="fade-down">
+                      <div class="d-flex flex-row justify-content-center">
+                        <div>
+                            <h1 class="head">Login here</h1>
+                            <p>
+                                Meet, chat, call, and<br>collaborate in just one<br>place.
+                            </p>
+                           <!-- <button class="btn1">
+                            <a href="/index" class="stya" id="link">Get started!
+                                     <i class="fas fa-chevron-right"></i>
+                                </a>
+                               
+                           </button> -->
+                           <div  class="g-signin2" data-onsuccess="onSignIn" ></div>
+                           </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up-right">
+                    <h1 class="showcase"></h1>
+                </div>
+                </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4" data-aos="zoom-in-left">
+                    <div class="mid">
+                        <p id="evy">Teachere is for everyone!</p>
+                        <span class="midpara">Whether it’s chat, calls, or video, anyone can engage at any time, bringing everyone closer.</span><br><br>
+                        <span class="midpara">Your docs, photos, videos, chat history, and meeting notes are always there, so it’s easier to work together.</span><br>
+                       <br><span class="midpara">Set up your team’s space with all the apps you need so you can stay in just one place instead of jumping around.</span><br>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                   <div class="d-flex flex-row">
+                    <div class="column" data-aos="zoom-out-down">
+                        <img src="public/img/right.png"  id="large"  alt="">
+                        <div>
+                            <a href="#" class="btn">
+                                Work<i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                       
+                    </div>
+                   <div class="d-flex flex-column">
+                    <div class="column" data-aos="zoom-out-left">
+                        <img src="public/img/saas.png" id="midi" alt="">
+                        <a href="#" class="btn">
+                            Home<i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="column" data-aos="zoom-out-left">
+                        <img src="public/img/Screenshot 2021-06-25 121209.png"  id="end"  alt="">
+                        <a href="#" class="btn">
+                            School<i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                   </div>
+                   </div>
+
+                </div>
+            </div>
+            <div class="row shadow">
+                <div class="col-6 ml-5" data-aos="zoom-in-up">
+                    <h1 style="font-weight: 450;" class="ml-5 text-center">Chat</h1>
+                    <p class="mr-5 text-center">Share your opinion and have fun with your team. </p>
+                </div>
+                <div class="col-6 mr-5" data-aos="zoom-in-up">
+                    <h1 style="font-weight: 450;" class="ml-5 text-center">Meet</h1>
+                    <p class="mr-5 text-center">
+                        Instantly go from group chat to video conference with the touch of a button.</p>
+                </div>
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <img src="public/img/front2.png"  id="endi"  alt="">
+                      
+                </div>
+                
+            </div>
+           
+
+        </div>
+        <script>
+            function signOut() {
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function () {
+                console.log('User signed out.');
+                });
+            }
+            </script>
+        
+            <script>
+            function onSignIn(googleUser) {
+                var id_token = googleUser.getAuthResponse().id_token;
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.onload = function() {
+                    console.log('Signed in as: ' + xhr.responseText);
+                    if(xhr.responseText == 'success'){
+                        signOut();
+                        location.assign('/index')
+                    }
+                };
+                xhr.send(JSON.stringify({token : id_token}));
+              }
+            </script>
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>
+              AOS.init({
+                  offset: 300,
+                  duration: 1000,
+              });
+              </script>
+        
+
+        <!-- ---------------------------------------------------->
+       
+    </body>
+</html>
